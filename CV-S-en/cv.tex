@@ -1,0 +1,191 @@
+%------------------------------------
+% Dario Taraborelli
+% Typesetting your academic CV in LaTeX
+%
+% URL: http://nitens.org/taraborelli/cvtex
+% DISCLAIMER: This template is provided for free and without any guarantee 
+% that it will correctly compile on your system if you have a non-standard  
+% configuration.
+% Some rights reserved: http://creativecommons.org/licenses/by-sa/3.0/
+%------------------------------------
+
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+
+\documentclass[10pt, a4paper]{article}
+\usepackage{fontspec} 
+
+% DOCUMENT LAYOUT
+\usepackage{geometry} 
+\geometry{a4paper, textwidth=5.5in, textheight=8.5in, marginparsep=7pt, marginparwidth=.6in}
+\setlength\parindent{0in}
+
+% FONTS
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage{xunicode}
+\usepackage{xltxtra}
+\defaultfontfeatures{Mapping=tex-text}
+%\setromanfont [Ligatures={Common}, Numbers={OldStyle}, Variant=01]{Linux Libertine O}
+%\setmonofont[Scale=0.8]{Monaco}
+%%% modified by Karol Kozioł for ShareLaTeX use
+\setmainfont[
+  Ligatures={Common}, Numbers={OldStyle}, Variant=01,
+  BoldFont=LinLibertine_RB.otf,
+  ItalicFont=LinLibertine_RI.otf,
+  BoldItalicFont=LinLibertine_RBI.otf
+]{LinLibertine_R.otf}
+\setmonofont[Scale=0.8]{DejaVuSansMono.ttf}
+
+% ---- CUSTOM COMMANDS
+\chardef\&="E050
+\newcommand{\html}[1]{\href{#1}{\scriptsize\textsc{[html]}}}
+\newcommand{\pdf}[1]{\href{#1}{\scriptsize\textsc{[pdf]}}}
+\newcommand{\doi}[1]{\href{#1}{\scriptsize\textsc{[doi]}}}
+% ---- MARGIN YEARS
+\usepackage{marginnote}
+\newcommand{\amper{}}{\chardef\amper="E0BD }
+\newcommand{\years}[1]{\marginnote{\scriptsize #1}}
+\renewcommand*{\raggedleftmarginnote}{}
+\setlength{\marginparsep}{7pt}
+\reversemarginpar
+
+% HEADINGS
+\usepackage{sectsty} 
+\usepackage[normalem]{ulem} 
+\sectionfont{\mdseries\upshape\Large}
+\subsectionfont{\mdseries\scshape\normalsize} 
+\subsubsectionfont{\mdseries\upshape\large} 
+
+% PDF SETUP
+% ---- FILL IN HERE THE DOC TITLE AND AUTHOR
+\usepackage[%dvipdfm, 
+bookmarks, colorlinks, breaklinks, 
+% ---- FILL IN HERE THE TITLE AND AUTHOR
+	pdftitle={Albert Einstein - vita},
+	pdfauthor={My name},
+	pdfproducer={http://nitens.org/taraborelli/cvtex}
+]{hyperref}  
+\hypersetup{linkcolor=blue,citecolor=blue,filecolor=black,urlcolor=MidnightBlue} 
+
+% DOCUMENT
+\begin{document}
+{\LARGE Ali Asgari}\\[1cm]
+Department of Computer Engineering\\
+Sharif University of Technology\\
+Tehran, I.R. Iran\\[.2cm]
+Phone: \texttt{+98-913-649-6628}\\
+%Fax: \texttt{609-924-8399}\\[.2cm]
+Email: \href{mailto:aliasgari@ce.sharif.edu}{aliasgari@ce.sharif.edu}\\
+\textsc{Web}: \href{http://ce.sharif.edu/\%7Ealiasgari/}{http://ce.sharif.edu/~aliasgari/}\\ 
+\vfill
+% Born:  March 12, 1879---Ulm, Germany\\
+%Nationality:  German/American
+
+%%\hrule
+%\section*{Current position}
+%\emph{Emeritus Professor}, Institute for Advanced Study, Princeton
+
+%%\hrule
+%\section*{Areas of specialization}
+ %Physics • Relativity theory
+\section*{Research Interests}
+\begin{itemize}
+\item Image Processing
+\item Software Engineering (Automation)
+\item Software Hardware Codesign
+\end{itemize}
+
+
+%%\hrule
+\section*{Education}
+\noindent
+\years{2015-2019}\textbf{B.Sc. Student in Computer Engineering (GPA: 18.77/20.00)}\\
+Department of Computer Engineering\\
+Sharif University of Technology, Tehran, I.R. Iran\\
+\years{2012-2015}\textbf{High School Diploma in Mathematics and Physics}\\
+Shahid Ejei High School, Isfahan, I.R. Iran\\
+Affiliated  with the National Organization for the Development of Exceptional Talents (NODET)
+
+\section*{Teaching and Working Experience}
+\noindent
+\years{2017-Now}\textbf{Image Processing Research and Development at \href{http://me.ut.ac.ir/sne/}{Surface Nano Engineering Lab.}} \\
+Department of Mechanical Engineering\\
+Tehran University, I.R. Iran\\
+Supervisor: Farshid Chini\\
+\years{2017-Now}\textbf{Linux Developer at NaaD Hardware Security Company}\\
+Technology Service Center\\
+Sharif University of Technology, Tehran, I.R. Iran\\
+Supervisor: Siavash Bayat Sarmadi\\
+\years{2016-2017}\textbf{Advanced Programming Teaching Assistant 
+}\\
+Pardis Department of Information Technology\\
+Sharif University of Technology, Tehran, I.R. Iran\\
+\years{2017-2018}\textbf{Technical Staff (Head of Website Team)}\\
+Sharif AI Challenge Event\\
+Sharif University of Technology, Tehran, I.R. Iran\\
+\years{2016-2017}\textbf{Technical Staff}\\
+Sharif AI Challenge Event\\
+Sharif University of Technology, Tehran, I.R. Iran\\
+\years{2013-2017}\textbf{Working as a Freelancer Desktop and Web Developer}
+
+\section*{Languages}
+\noindent
+English (Intermediate)\\
+Persian (Native)\\
+Arabic (Beginner)\\
+
+\section*{Related Course}
+\noindent
+\years{Fall 2017}\textbf{Signals and Systems}\\
+Department of Computer Engineering\\
+Sharif University of Technology, Tehran, I.R. Iran\\
+
+\years{Fall 2017}\textbf{Engineering Mathematics}\\
+Department of Mathematics\\
+Sharif University of Technology, Tehran, I.R. Iran\\
+
+\years{Fall 2017}\textbf{Digital System Design}\\
+Department of Computer Engineering\\
+Sharif University of Technology, Tehran, I.R. Iran\\
+
+\years{Spring 2017}\textbf{Computer Architecture (20.00/20.00)}\\
+Department of Computer Engineering\\
+Sharif University of Technology, Tehran, I.R. Iran\\
+
+\years{Fall 2016}\textbf{Engineering Probability and Statistics (20.00/20.00)}\\
+Department of Computer Engineering\\
+Sharif University of Technology, Tehran, I.R. Iran\\
+
+\years{Fall 2016}\textbf{Computer Structure and Language (19.40/20.00)}\\
+Department of Computer Engineering\\
+Sharif University of Technology, Tehran, I.R. Iran\\
+
+
+
+\section*{Academic Projects}
+\noindent
+\years{Spring 2017}\href {https://github.com/altostratous/simpu}{Design and Simulation of a Simple Pipeline CPU}
+
+\section*{Skills}
+\noindent
+Programming Languages: Java, C, C++, Verilog, Python, C\#, php, SQL\\
+Platforms and Tools: OpenCV, Matlab, Django, CakePhp\\
+Operating Systems: Linux, Windows.\\
+Documentation Tools: \LaTeX.
+
+%\vspace{1cm}
+\vfill{}
+%\hrulefill
+
+\begin{center}
+{\scriptsize  Last updated: \today %\- •\- 
+% ---- PLEASE LEAVE THIS BACKLINK FOR ATTRIBUTION AS PER CC-LICENSE
+%Typeset in \href{http://nitens.org/taraborelli/cvtex}{
+%\fontspec{Times New Roman}
+%\XeTeX 
+}\\
+% ---- FILL IN THE FULL URL TO YOUR CV HERE
+%\href{http://nitens.org/taraborelli/cvtex}{http://nitens.org/taraborelli/cvtex}}
+\end{center}
+
+\end{document}

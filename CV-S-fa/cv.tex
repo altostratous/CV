@@ -1,0 +1,195 @@
+%------------------------------------
+% Dario Taraborelli
+% Typesetting your academic CV in LaTeX
+%
+% URL: http://nitens.org/taraborelli/cvtex
+% DISCLAIMER: This template is provided for free and without any guarantee 
+% that it will correctly compile on your system if you have a non-standard  
+% configuration.
+% Some rights reserved: http://creativecommons.org/licenses/by-sa/3.0/
+%------------------------------------
+
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+
+\documentclass[10pt, a4paper]{article}
+\usepackage{fontspec} 
+
+% DOCUMENT LAYOUT
+\usepackage{geometry} 
+\geometry{a4paper, textwidth=5.5in, textheight=8.5in, marginparsep=7pt, marginparwidth=.6in}
+\setlength\parindent{0in}
+
+% FONTS
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage{xunicode}
+\usepackage{xltxtra}
+\defaultfontfeatures{Mapping=tex-text}
+%\setromanfont [Ligatures={Common}, Numbers={OldStyle}, Variant=01]{Linux Libertine O}
+%\setmonofont[Scale=0.8]{Monaco}
+%%% modified by Karol Kozioł for ShareLaTeX use
+\setmainfont[
+  Ligatures={Common}, Numbers={OldStyle}, Variant=01,
+  BoldFont=LinLibertine_RB.otf,
+  ItalicFont=LinLibertine_RI.otf,
+  BoldItalicFont=LinLibertine_RBI.otf
+]{LinLibertine_R.otf}
+\setmonofont[Scale=0.8]{DejaVuSansMono.ttf}
+
+% ---- CUSTOM COMMANDS
+\chardef\&="E050
+\newcommand{\html}[1]{\href{#1}{\scriptsize\textsc{[html]}}}
+\newcommand{\pdf}[1]{\href{#1}{\scriptsize\textsc{[pdf]}}}
+\newcommand{\doi}[1]{\href{#1}{\scriptsize\textsc{[doi]}}}
+% ---- MARGIN YEARS
+\usepackage{marginnote}
+\newcommand{\amper{}}{\chardef\amper="E0BD }
+\newcommand{\years}[1]{\marginnote{\scriptsize #1}}
+\renewcommand*{\raggedleftmarginnote}{}
+\setlength{\marginparsep}{7pt}
+\reversemarginpar
+
+% HEADINGS
+\usepackage{sectsty} 
+\usepackage[normalem]{ulem} 
+\sectionfont{\mdseries\upshape\Large}
+\subsectionfont{\mdseries\scshape\normalsize} 
+\subsubsectionfont{\mdseries\upshape\large} 
+
+% PDF SETUP
+% ---- FILL IN HERE THE DOC TITLE AND AUTHOR
+\usepackage[%dvipdfm, 
+bookmarks, colorlinks, breaklinks, 
+% ---- FILL IN HERE THE TITLE AND AUTHOR
+	pdftitle={Albert Einstein - vita},
+	pdfauthor={My name},
+	pdfproducer={http://nitens.org/taraborelli/cvtex}
+]{hyperref}  
+\hypersetup{linkcolor=blue,citecolor=blue,filecolor=black,urlcolor=MidnightBlue} 
+
+\usepackage{xepersian}
+
+% DOCUMENT
+\begin{document}
+{\LARGE علی عسگری}\\[1cm]
+تهران، ج. ا. ایران\\
+دانشگاه صنعتی شریف\\
+دانشکده مهندسی کامپیوتر\\[.2cm]
+تلفن:
+{98-913-649-6628+}\\
+%Fax: \texttt{609-924-8399}\\[.2cm]
+رایانامه: \href{mailto:aliasgari@ce.sharif.edu}{aliasgari@ce.sharif.edu}\\
+\textsc{تارنما}: \href{http://ce.sharif.edu/~aliasgari/}{http://ce.sharif.edu/\textasciitilde{}aliasgari/}\\ 
+\vfill
+% Born:  March 12, 1879---Ulm, Germany\\
+%Nationality:  German/American
+
+%%\hrule
+%\section*{Current position}
+%\emph{Emeritus Professor}, Institute for Advanced Study, Princeton
+
+%%\hrule
+%\section*{Areas of specialization}
+ %Physics • Relativity theory
+\section*{علائق تحقیقاتی}
+\begin{itemize}
+\item پردازش تصویر
+\item مهندسی نرم‌افزار (اتوماسیون)
+\item کودیزاین نرم‌افزار و سخت‌افزار
+\end{itemize}
+
+
+%%\hrule
+\section*{تحصیلات}
+\noindent
+
+
+
+\years{1394-1398}\textbf{دانشجوی کارشناسی مهندسی کامپیوتر (معدل:‌ 18/77 از 20)}\\
+دانشکده‌ی مهندسی کامپیوتر دانشگاه صنعتی شریف\\
+
+\years{1390-1394}\textbf{دیپلم ریاضی - فیزیک}\\
+ج. ا. ایران، اصفهان، دبیرستان شهید اژه‌ای (جزء سازمان ملی پرورش استعدادهای درخشان)\\
+
+\section*{تجربه تدریس و کار}
+\noindent
+
+
+
+\years{1396-1397}\textbf{تحقیق و توسعه پردازش تصویر در  \href{http://me.ut.ac.ir/sne/}{آزمایشگاه نانومهندسی سطح}}\\
+دانشکده‌ی مهندسی مکانیک دانشگاه تهران، تحت نظارت فرشید چینی\\
+
+\years{1396 تا الان}\textbf{توسعه دهنده‌ی لینوکس در شرکت سخت‌افزاری-نرم‌افزاری نآد}\\
+مرکز خدمات فنآوری دانشگاه صنعتی شریف، تحت نظارت سیاوش بیات سرمدی\\
+
+\years{1395-1396}\textbf{دستیار آموزشی برنامه‌نویسی پیشرفته}\\
+پردیس فنآوری اطلاعات دانشگاه صنعتی شریف\\
+
+\years{1396-1397}\textbf{برگزارکننده‌ی فنی (مسئول تیم سایت)}\\
+رقابت‌های هوش مصنوعی دانشگاه صنعتی شریف\\
+
+\years{1395-1396}\textbf{برگزارکننده‌ی فنی}\\
+رقابت‌های هوش مصنوعی دانشگاه صنعتی شریف\\
+
+\years{1392-1396}\textbf{فریلنسر توسعه‌دهنده نرم‌افزارهای دسکتاپ و وب}
+
+\section*{زبان‌ها}
+\noindent
+انگلیسی (متوسط\LTRfootnote{Intermediate})، فارسی (زبان مادری)، عربی (مبتدی)\\
+
+\section*{درس‌های مرتبط}
+\noindent
+
+
+
+\years{پاییز 1396}\textbf{سیگنال‌ها و سیستم‌ها}\\
+دانشکده‌ی مهندسی کامپیوتر\\
+ج. ا. ایران،‌ تهران،‌ دانشگاه صنعتی شریف\\
+
+\years{پاییز 1396}\textbf{ریاضیات مهندسی}\\
+دانشکده‌ی ریاضی،‌ دانشگاه صنعتی شریف\\
+
+\years{پاییز 1396}\textbf{طراحی سیستم‌های دیجیتال}\\
+دانشکده‌ی مهندسی کامپیوتر،‌ دانشگاه صنعتی شریف\\
+
+\years{پاییز 1395}\textbf{معماری کامپیوتر (20/00 از 20)}\\
+دانشکده‌ی مهندسی کامپیوتر،‌ دانشگاه صنعتی شریف\\
+
+\years{پاییز 1395}\textbf{آمار و احتمال مهندسی (20/00 از 20)}\\
+دانشکده‌ی مهندسی کامپیوتر،‌ دانشگاه صنعتی شریف\\
+
+
+\years{پاییز 1395}\textbf{ساختار زبان و کامپیوتر (19/4 از 20)}\\
+دانشکده‌ی مهندسی کامپیوتر،‌ دانشگاه صنعتی شریف\\
+
+
+\section*{پروژه‌های درسی}
+\noindent
+
+
+
+\years{پاییز 1395}\href {https://github.com/altostratous/simpu}{طراحی و شبیه‌سازی یک پردازنده‌ی خط لوله‌ی ساده}
+
+\section*{مهارت‌ها}
+\noindent
+تسلط بر زبان‌های برنامه‌نویسی:‌ \lr{Java, C, C++, Verilog, Python, C\#, php, SQL}\\
+کار با بسترها و ابزارها: \lr{OpenCV, Matlab, Django, CakePhp}\\
+کار با سیستم‌های عامل:‌ \lr{Linux, Windows}\\
+ابزارهای کار با اسناد:‌ \LaTeX
+
+%\vspace{1cm}
+\vfill{}
+%\hrulefill
+
+\begin{center}
+{\scriptsize  آخرین بروزرسانی: \today %\- •\- 
+% ---- PLEASE LEAVE THIS BACKLINK FOR ATTRIBUTION AS PER CC-LICENSE
+%Typeset in \href{http://nitens.org/taraborelli/cvtex}{
+%\fontspec{Times New Roman}
+%\XeTeX 
+}\\
+% ---- FILL IN THE FULL URL TO YOUR CV HERE
+%\href{http://nitens.org/taraborelli/cvtex}{http://nitens.org/taraborelli/cvtex}}
+\end{center}
+
+\end{document}
