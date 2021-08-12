@@ -17,7 +17,7 @@
 
 % DOCUMENT LAYOUT
 \usepackage{geometry} 
-\geometry{a4paper, textwidth=5.5in, textheight=10in, marginparsep=3pt, marginparwidth=.6in}
+\geometry{a4paper, textwidth=5.6in, textheight=10.6in, marginparsep=3pt, marginparwidth=.6in}
 \setlength\parindent{0in}
 
 % FONTS
@@ -35,7 +35,7 @@
   BoldItalicFont=LinLibertine_RBI.otf
 ]{LinLibertine_R.otf}
 \setmonofont[Scale=0.8]{DejaVuSansMono.ttf}
-
+\pagenumbering{gobble}
 % ---- CUSTOM COMMANDS
 \chardef\&="E050
 \newcommand{\html}[1]{\href{#1}{\scriptsize\textsc{[html]}}}
@@ -52,9 +52,9 @@
 % HEADINGS
 \usepackage{sectsty} 
 \usepackage[normalem]{ulem} 
-\sectionfont{\mdseries\upshape\Large}
-\subsectionfont{\mdseries\scshape\normalsize} 
-\subsubsectionfont{\mdseries\upshape\large} 
+%\sectionfont{\mdseries\upshape\Large}
+%\subsectionfont{\mdseries\scshape\normalsize} 
+%\subsubsectionfont{\mdseries\upshape\large} 
 
 % PDF SETUP
 % ---- FILL IN HERE THE DOC TITLE AND AUTHOR
@@ -70,8 +70,7 @@ bookmarks, colorlinks, breaklinks,
 % DOCUMENT
 \begin{document}
 {\LARGE Ali Asgari}\\[1cm]
-%Department of Computer Engineering, Sharif University of Technology, Tehran, I.R. Iran\\[.2cm]
-Yektanet Advertising Platform, Tehran, I.R. Iran\\[.2cm]
+Department of Computer Engineering, Sharif University of Technology, Tehran, I.R. Iran\\[.2cm]
 Phone: \texttt{+98-913-649-6628}, Email: \href{mailto:aliasgarikh97@gmail.com}{aliasgarikh97@gmail.com},  \href{https://www.linkedin.com/in/ali-asgari-51981884/}{LinkedIn}, \href{https://github.com/altostratous}{GitHub}, \href{https://stackoverflow.com/users/2656621/ali-asgari?tab=profile}{StackOverflow}\\ 
 %\vfill
 % Born:  March 12, 1879---Ulm, Germany\\
@@ -84,58 +83,60 @@ Phone: \texttt{+98-913-649-6628}, Email: \href{mailto:aliasgarikh97@gmail.com}{a
 %%\hrule
 %\section*{Areas of specialization}
  %Physics • Relativity theory
-\section*{Technical Interests}
-Problem Solving, Networks, DevOps, Embedded and Web Applications
+\section*{Research Interests}
+HPC, Cloud Computing, Computer Vision, Social Computing
 %%\hrule
-\section*{Working Experience}
-\noindent
-\years{2019-Now}\textbf{Software Engineer at \href{https://en.yektanet.com/}{Yektanet}}\\
-Jaryan: Leading a team of 5 developers towards a 0.5 billion Tomans per month revenue system\\
-Native Ads System: Decomposition and Maintentance of the major revenue \textasciitilde500 rps service \\
-Shahrak Qarb, Tehran, I.R. Iran\\
-\years{2018-2018}\textbf{Internship at \href{https://parsa.epfl.ch/}{PARSA}} \\
-Contributed to \href{http://cloudsuite.ch/}{CloudSuite} and \href{https://parsa-epfl.github.io/qflex/}{Qflex} Open Source Projects by Docker Development, Performance Analysis and Maintenance\\
-PARSA Lab, EPFL, Lausanne, Switzerland\\
-\years{2017-2019}\textbf{Developer at NaaD Digital Company}\\
-Software-Hardware IPSec: DevOps, Embedded, Network and Linux System Development\\
-Technology Service Center, Sharif University of Technology, Tehran, I.R. Iran\\
-%\years{2017-2018}\textbf{Head of Website Team}\\
-%Sharif AI Challenge Event (More Than 300 Active Users)\\
-%Sharif University of Technology, Tehran, I.R. Iran\\
-%\years{2017-2018}\textbf{Backend Development Mentor}\\
-%Webelopers Web Development Competition\\
-%Department of Computer Engineering, Sharif University of Technology, Tehran, I.R. Iran\\
-\years{2013-2018}\textbf{Notable Projects}\\
-\href{https://github.com/altostratous/CalDav}{Versatile CalDav Client}\\
-%\href{https://github.com/altostratous/etcli}{Adding a Feature to Telegram Command Line Client}\\
-\href{https://github.com/altostratous/VAuth}{Voiceprint Authentication C\# Library}\\
-%C\# WPF UI Implementation\\
-%C\# WCF Voice Chat Implementation\\
-%UI Automation\\
-%Implementing Payment API Clients\\
-%Web Crawling\\
-\href {https://github.com/altostratous/simpu}{Design and Simulation of a Simple Pipeline CPU}\\%
-%Course Project \\
 
-\section*{Skills (More Mastered First)}
-\noindent
-Programming Languages: Python, Java, C\#, bash, C, C++, Verilog, php, SQL\\
-Platforms and Tools: Django, Django Rest Framework, Docker, GitLab CI, Git, OpenCV, GDB\\ %, Semantic UI, Qemu, CakePhp\\
-Documentation Tools: Microsoft Office, Markdown, \LaTeX\\
-Languages: English (Advanced), Persian (Native)\\
 
 \section*{Education}
 \noindent
-\years{2020-Now}\textbf{MASc. Student in Computer Systems}\\
-Research Area: Machine Learning Reliability\\
-Dep. of Electrical and Computer Engineering, University of British Columbia, Vancouver, Canada\\
-\years{2015-2019}\textbf{B.Sc. Graduate in Computer Engineering (GPA: 18.49/20.00)}\\
-\textbf{Related Courses: Data and Network Security, Computer Networks, Operating Systems}\\
+\years{2015-Now}\textbf{B.Sc. Student in Computer Engineering (GPA: 18.49/20.00)}\\
+%Related Courses: Data Structure, Design of Algorithms, Operating Systems, Computer Networks\\
 Department of Computer Engineering, Sharif University of Technology, Tehran, I.R. Iran\\
 \years{2012-2015}\textbf{High School Diploma in Mathematics and Physics}\\
-Shahid Ejei High School, Isfahan, I.R. Iran\\
+%Shahid Ejei High School, Isfahan, I.R. Iran\\
 Affiliated  with the National Organization for the Development of Exceptional Talents (NODET)
 
+
+\section*{Research Experience}
+\years{2018-2018}\textbf{Internship at \href{https://parsa.epfl.ch/}{PARSA at EPFL}} (\href{https://summer.epfl.ch/}{Summer@EPFL} fully funded program)\\
+Contributed to \href{http://cloudsuite.ch/}{CloudSuite} Open Source Projects by Performance Analysis and Maintenance\\
+Under Supervision of \href{https://parsa.epfl.ch/~falsafi/}{Babak Falsafi}\\
+\years{2017-2018}\textbf{Image Processing R}\includegraphics[height=\fontcharht\font`\B]{and.jpg}\textbf{D at \href{http://me.ut.ac.ir/sne/}{Surface Nano Engineering Lab. at Tehran University}} \\
+An OpenCV based Application to Measure Contact Angle from Various Droplet Images\\
+Under supervision of \href{https://profile.ut.ac.ir/en/~chini}{Farshid Chini}\\
+\years{2017-2018}\textbf{Stock Market Analysis}\\
+Modeling Stock Market Time Series (Ongoing Undergraduate Project)\\
+Under Supervision of \href{http://ce.sharif.edu/~fazli/}{MohammadAmin Fazli}
+\section*{Employment}
+\noindent
+\years{2019-Now}\textbf{Software Engineer at \href{https://en.yektanet.com/}{Yektanet Digital Marketing}}\\
+Decomposition and Maintentance of the major revenue \textasciitilde500 rps service \\
+\years{2017-2019}\textbf{Developer at NaaD Digital Company}\\
+DevOps, Embedded, Network and Linux System Development\\
+Under supervision of \href{http://sharif.edu/~sbayat/}{Siavash Bayat-Sarmadi}\\
+\years{2013-2018}\textbf{Working as a Freelancer}\\
+\href{https://github.com/altostratous/CalDav}{Versatile CalDav Client}\\
+%\href{https://github.com/altostratous/etcli}{Adding a Feature to Telegram Command Line Client}\\
+\href{https://github.com/altostratous/VAuth}{Voiceprint Authentication C\# Library}\\
+%C\# WPF UI Implementation, WCF Voice Chat Implementation, UI Automation\\
+%Implementing Payment API Clients\\
+
+
+\section*{Positions of Responsibility}
+\noindent
+
+\years{2017-2018}\textbf{Head of Website Team at Sharif AI Challenge National Event}\\
+Leading a team of \textasciitilde9 to develop and operate a website capable of \textasciitilde300 active users letting their AI agents run against each other, on an automatically managed fair resource \\
+\years{2019-Now}\textbf{Head TA of Web Development Course}\\
+\years{2017-2018}\textbf{Member of Student Guild Council}\\
+
+\section*{Skills}
+\noindent
+\textbf{Programming Languages}: Python, Java, bash, Verilog, C++, SQL, C, C\#, php\\
+\textbf{Platforms and Tools}: Docker, Qemu, OpenCV, scikit-learn, Django, CI/CD, Git\\
+\textbf{Documentation Tools}: Markdown, \LaTeX, Mircrosoft Office\\
+\textbf{Languages}: English (Fluent), Persian (Native), Arabic (Beginner)\\
 
 %\vspace{1cm}
 \vfill{}
